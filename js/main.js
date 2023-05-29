@@ -7,7 +7,13 @@ createApp({
                 '',
                 '',
                 '',
-                ''
+                '',
+                '',
+                '',
+                '',
+                '',
+                '',
+                '',
             ]
         }
     },
@@ -18,7 +24,7 @@ createApp({
         .then( 
             response => {
                 console.log(response.data.response);
-            this.emails = response.data.response;
+            this.emails.push = response.data.response;
             });
     }
 }) .mount('#app');
