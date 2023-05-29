@@ -4,16 +4,7 @@ createApp({
     data(){
         return{
             emails: [
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
+                
             ]
         }
     },
@@ -24,7 +15,7 @@ createApp({
         .then( 
             response => {
                 console.log(response.data.response);
-            this.emails.push = response.data.response;
+            this.emails.push (response.data.response) = response.data.response;
             });
     }
 }) .mount('#app');
